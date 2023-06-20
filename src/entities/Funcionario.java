@@ -16,6 +16,14 @@ public class Funcionario {
 	public double salarioLiquido() {
 		return salarioBruto - imposto;
 	}
+
+	@Override
+	public String toString() {
+		return "Funcionario: Nome: " 
+				+ name + ", Salario Bruto: " 
+				+ String.format("%.2f", salarioBruto ) + ", Imposto: " 
+				+ String.format("%.2f", imposto) ;
+	}
 	
 	
 	
