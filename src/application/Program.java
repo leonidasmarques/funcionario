@@ -1,9 +1,16 @@
 package application;
 
+import java.util.Scanner;
+
+import entities.Funcionario;
+
 public class Program {
 
 	public static void main(String[] args) {
-		/* Testando após o push -f*/
+		
+		Scanner sc = new Scanner(System.in);
+
+		Funcionario func = new Funcionario();
 
 	}
 
