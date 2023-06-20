@@ -20,6 +20,12 @@ public class Program {
 		func.imposto = sc.nextDouble();
 		
 		System.out.print(func);
+		System.out.println();
+		double percent = 0;
+		System.out.println("Qual o percentual de aumento de salario?");
+		percent = sc.nextDouble();
+		
+		System.out.printf("O salario ajustado é: R$%.2f", func.salarioReajustado(percent));
 		
 	}
 

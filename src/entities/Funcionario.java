@@ -9,8 +9,8 @@ public class Funcionario {
 	
 	public double salarioReajustado(double x) {
 		double aux;
-		aux = salarioBruto + x;
-		return aux;
+		aux = (salarioBruto / 100 ) * x;
+		return salarioLiquido() + aux;
 	}
 	
 	public double salarioLiquido() {
@@ -20,9 +20,8 @@ public class Funcionario {
 	@Override
 	public String toString() {
 		return "Funcionario: Nome: " 
-				+ name + ", Salario Bruto: " 
-				+ String.format("%.2f", salarioBruto ) + ", Imposto: " 
-				+ String.format("%.2f", imposto) ;
+				+ name + ", Salario Liquido: R$" 
+				+ String.format("%.2f", salarioLiquido());
 	}
 	
 	
