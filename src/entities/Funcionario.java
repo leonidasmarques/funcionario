@@ -24,8 +24,4 @@ public class Funcionario {
 				+ String.format("%.2f", salarioLiquido());
 	}
 	
-	
-	
-	
-	
 }

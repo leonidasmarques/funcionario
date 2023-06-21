@@ -26,7 +26,7 @@ public class Program {
 		percent = sc.nextDouble();
 		
 		System.out.printf("O salario ajustado é: R$%.2f", func.salarioReajustado(percent));
-		
+		sc.close();
 	}
 
 }
